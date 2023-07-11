@@ -65,13 +65,7 @@ public class InventoryRestController {
 	@DeleteMapping("/inventory/remove/{id}")
 	public void removeItem(@PathVariable Long id){
 		try {
-			if(getItemById(id)!=null) {
-				inventoryService.removeItem(id);
-				System.out.println("Item is deleted");
-			}
-			else {
-				System.out.println("No item to delete");
-			}
+			inventoryService.removeItem(id);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
