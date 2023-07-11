@@ -49,7 +49,7 @@ public class InventoryService {
 	
 	public InventoryItems getById(Long id){
 		try {
-			return inventoryRepository.getById(id);
+			return inventoryRepository.findById(id).get();
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
