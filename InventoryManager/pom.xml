@@ -10,9 +10,9 @@
 	</parent>
 	<groupId>com.inn</groupId>
 	<artifactId>InventoryManager</artifactId>
-	<version>0.0.1</version>
+	<version>1.0.0</version>
 	<name>InventoryManager</name>
-	<description>Demo project for Spring Boot</description>
+	<description>Spring boot project for inventory managment using mysql database</description>
 	<properties>
 		<java.version>11</java.version>
 	</properties>
